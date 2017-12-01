@@ -111,7 +111,7 @@ try:
             time_in_seconds[key] = (key / 1000 )- start_time
 
             # Convergence point calculation (E * D) / (E + M)
-            conv_point = 65 * 18/(65 + (128 *diff_xpos))
+            conv_point = 65 * 18/(65 + (3.15 *diff_xpos))
 
             distance_ball[key] = distance_data['Distance'][right_eye_convpt[key]['index']]
             diff_list[key] = conv_point
